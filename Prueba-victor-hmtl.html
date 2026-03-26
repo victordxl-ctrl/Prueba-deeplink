@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Deeplink Test</title>
+</head>
+<body>
+
+  <h2>Test Deeplink</h2>
+
+  <a href="myapp://home?test=123">
+    <button>Abrir Deeplink (A)</button>
+  </a>
+
+  <br><br>
+
+  <button onclick="openDeeplink()">Abrir Deeplink (JS)</button>
+
+  <script>
+    function openDeeplink() {
+      window.location.href = "myapp://home?test=123";
+    }
+  </script>
+
+</body>
+</html>
